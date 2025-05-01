@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import Image from "next/image";
-import doctorImage from "/data/images/DoctorBui.png";
+import doctorImage from "/public/images/DoctorBui.png";
 import GradientSection from "@/components/GradientSection";
 import { motion } from "framer-motion";
 

@@ -42,11 +42,11 @@ export default function OfficePage() {
                   <p>Friday</p>
                 </div>
                 <div className="space-y-2">
-                  <p>7:30 - 4:30</p>
-                  <p>7:30 - 4:30</p>
-                  <p>7:30 - 4:30</p>
-                  <p>7:30 - 4:30</p>
-                  <p>7:30 - 4:30</p>
+                  <p>7:30 AM - 4:30 PM</p>
+                  <p>7:30 AM - 11:30 AM</p>
+                  <p>7:30 AM - 4:30 PM</p>
+                  <p>7:30 AM - 11:30 AM</p>
+                  <p>7:30 AM - 4:30 PM</p>
                 </div>
               </div>
             </div>
