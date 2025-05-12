@@ -1,6 +1,6 @@
 // components/FullService.tsx
 import { FC } from "react";
-import descriptions from "/data/text/descriptions";
+import descriptions from "../../data/text/descriptions";
 
 interface FullServiceProps {
   service: string;
