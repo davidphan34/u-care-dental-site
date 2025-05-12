@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useRef } from "react";
 import { Menu, X } from "lucide-react";
-import Logo from "/data/images/logo.png";
 
 const serviceList = [
   "bonding",
@@ -34,13 +33,16 @@ export default function Navbar() {
       <div className="flex items-center justify-between px-4 sm:px-8 lg:px-16 py-4">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <Image
-            src={Logo}
-            alt="U-Care Dental Logo"
-            width={130}
-            height={40}
-            className="h-10 w-auto object-contain"
-          />
+          <div className="relative h-10 w-[130px]">
+            <Image
+              src="/images/logo.png"
+              alt="U-Care Dental Logo"
+              fill
+              className="object-contain"
+              sizes="130px"
+              priority
+            />
+          </div>
         </Link>
 
         {/* Desktop Nav */}

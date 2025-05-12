@@ -1,8 +1,4 @@
 import Image from "next/image";
-import crown from "/data/images/crown.png";
-import clean from "/data/images/clean.png";
-import braces from "/data/images/braces.png";
-import filling from "/data/images/filling.png";
 import GradientSection from "@/components/GradientSection";
 import Layout from "@/components/Layout";
 import { motion } from "framer-motion";
@@ -28,14 +24,14 @@ export default function FeaturedPage() {
             className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
             {/* Card */}
             <div className="bg-white rounded-xl shadow-md p-6 text-center">
-              <Image src={crown} alt="Crown icon" width={64} height={64} className="mx-auto mb-4" />
+              <Image src="/images/crown.png" alt="Crown icon" width={64} height={64} className="mx-auto mb-4" />
               <div className="text-xl font-semibold mb-2">Single-visit Crowns</div>
               <p className="text-sm text-gray-600">A dental crown restores the shape and strength of your teeth. 
                 With CEREC®, we now provide single-visit crowns. Typically, a crown will require 2 visits.</p>
             </div>
 
             <div className="bg-white rounded-xl shadow-md p-6 text-center">
-              <Image src={clean} alt="Cleanings icon" width={64} height={64} className="mx-auto mb-4" />
+              <Image src="images/clean.png" alt="Cleanings icon" width={64} height={64} className="mx-auto mb-4" />
               <div className="text-xl font-semibold mb-2">Cleanings</div>
               <p className="text-sm text-gray-600">
                 Routine cleanings and hygiene to keep your smile healthy.
@@ -43,7 +39,7 @@ export default function FeaturedPage() {
             </div>
 
             <div className="bg-white rounded-xl shadow-md p-6 text-center">
-              <Image src={braces} alt="Braces icon" width={64} height={64} className="mx-auto mb-4" />
+              <Image src="/images/braces.png" alt="Braces icon" width={64} height={64} className="mx-auto mb-4" />
               <div className="text-xl font-semibold mb-2">Orthodontics</div>
               <p className="text-sm text-gray-600">Braces straighten out crooked teeth over time. We offer 
                 Fastbraces®, a revolutionary, patented technology that aligns your teeth much quicker 
@@ -51,7 +47,7 @@ export default function FeaturedPage() {
             </div>
 
             <div className="bg-white rounded-xl shadow-md p-6 text-center">
-              <Image src={filling} alt="Fillings icon" width={64} height={64} className="mx-auto mb-4" />
+              <Image src="/images/filling.png" alt="Fillings icon" width={64} height={64} className="mx-auto mb-4" />
               <div className="text-xl font-semibold mb-2">Fillings</div>
               <p className="text-sm text-gray-600">
                 Natural-looking fillings to restore strength and function.

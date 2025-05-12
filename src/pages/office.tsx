@@ -6,10 +6,6 @@ import GradientSection from "@/components/GradientSection";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import office1 from "/data/images/office1.jpg";
-import office2 from "/data/images/office2.jpg";
-import office3 from "/data/images/office3.jpg";
-
 export default function OfficePage() {
     return (
       <Layout>
@@ -85,15 +81,15 @@ export default function OfficePage() {
               className="rounded-xl shadow-md overflow-hidden"
             >
               <div>
-                <Image src={office1} alt="Lobby" />
+                <Image src="/images/office1.jpg" alt="Lobby" width={800} height={500} className="w-full h-auto" />
                 <p className="legend">Lobby</p>
               </div>
               <div>
-                <Image src={office2} alt="Front Desk" />
+                <Image src="/images/office2.jpg" alt="Front Desk" width={800} height={500} className="w-full h-auto" />
                 <p className="legend">Front Desk</p>
               </div>
               <div>
-                <Image src={office3} alt="Operatory" />
+                <Image src="/images/office3.jpg" alt="Operatory" width={800} height={500} className="w-full h-auto" />
                 <p className="legend">Operatory</p>
               </div>
             </Carousel>

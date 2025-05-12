@@ -1,5 +1,4 @@
 import Image from "next/image";
-import facebook from "/data/images/facebook_icon.png";
 
 export default function Footer() {
   return (
@@ -16,7 +15,7 @@ export default function Footer() {
         {/* Social Icons */}
         <div className="flex space-x-6">
           <a href="https://www.facebook.com/ucare.dental.7" target="_blank" rel="noopener noreferrer">
-            <Image src={facebook} alt="Facebook" width={24} height={24} className="hover:opacity-80" />
+            <Image src="/images/facebook_icon.png" alt="Facebook" width={24} height={24} className="hover:opacity-80" />
           </a>
         </div>
       </div>
