@@ -57,9 +57,9 @@ export default function ContactPage() {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
           {/* Left - Form */}
           <div className="bg-white/90 backdrop-blur-md p-8 rounded-xl shadow-lg">
-            <h2 className="text-xl font-semibold mb-6">Let's Connect</h2>
+            <h2 className="text-xl font-semibold mb-6">Let&apos;s Connect</h2>
             <p className="text-sm text-gray-600 mb-6">
-                Need help or have a question? Send us a message and we'll get back to you soon.
+                Need help or have a question? Send us a message and we&apos;ll get back to you soon.
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-4">
