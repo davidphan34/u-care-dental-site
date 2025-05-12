@@ -8,7 +8,6 @@ import {
   PhoneIcon,
   ChatBubbleBottomCenterTextIcon,
   MapPinIcon,
-  ClockIcon,
 } from "@heroicons/react/24/outline";
 
 export default function ContactPage() {

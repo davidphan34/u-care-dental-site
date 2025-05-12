@@ -1,5 +1,4 @@
 import Image from "next/image";
-import instagram from "/data/images/instagram_icon.png";
 import facebook from "/data/images/facebook_icon.png";
 
 export default function Footer() {
