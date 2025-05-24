@@ -59,7 +59,7 @@ export default function ContactPage() {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
           {/* Left - Form */}
           <div className="bg-white/90 backdrop-blur-md p-8 rounded-xl shadow-lg">
-            <h2 className="text-2xl font-semibold mb-6">Let&apos;s Connect</h2>
+            <h2 className="text-3xl font-semibold mb-6">Let&apos;s Connect</h2>
             <p className="text-lg text-slate-700 mb-6">
                 Need help or have a question? Send us a message and we&apos;ll get back to you soon.
             </p>
@@ -124,28 +124,28 @@ export default function ContactPage() {
           {/* Right - Info */}
           <div className="bg-white/90 backdrop-blur-md p-8 rounded-xl shadow-lg space-y-6 text-gray-800">
             <div>
-              <h3 className="text-2xl font-semibold mb-2">Contact Information</h3>
+              <h3 className="text-3xl font-semibold mb-2">Contact Information</h3>
               <a
                 href="https://maps.google.com/?q=6255+Lusk+Blvd+Suite+250,+San+Diego,+CA+92121"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-ucare hover:underline mt-2"
+                className="flex items-center gap-2 text-ucare hover:underline mt-2 text-lg"
               >
                 <MapPinIcon className="h-4 w-4" />
                 6255 Lusk Blvd, Suite 250, San Diego, CA 92121
               </a>
 
-              <a href="tel:8586580691" className="flex items-center gap-2 text-ucare hover:underline">
+              <a href="tel:8586580691" className="flex items-center gap-2 text-ucare hover:underline text-lg">
                 <PhoneIcon className="h-4 w-4" />
                 (858) 658-0691
               </a>
-              <a className="flex items-center gap-2 text-ucare">
+              <a className="flex items-center gap-2 text-ucare text-lg">
                 <PrinterIcon className="h-4 w-4" />
                 (858) 658-0692
               </a>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-2">Working Hours</h3>
+              <h3 className="text-3xl font-semibold mb-2">Working Hours</h3>
               <div className="grid grid-cols-2 text-lg">
                 <span>Monday:</span> <span>7:30 AM - 4:30 PM</span>
                 <span>Tuesday:</span> <span>7:30 AM - 11:30 AM</span>
