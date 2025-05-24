@@ -12,7 +12,7 @@ export default function OfficePage() {
         <GradientSection>
         <section className="px-6 py-20 text-gray-800">
           <motion.h1
-            className="text-3xl font-bold text-center text-blue-700 mb-12"
+            className="text-5xl font-bold text-center text-ucare mb-12"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -28,8 +28,8 @@ export default function OfficePage() {
           >
             {/* Office Hours */}
             <div>
-              <h2 className="text-2xl font-bold mb-4 text-blue-700">Office Hours</h2>
-              <div className="grid grid-cols-2 gap-2 text-sm">
+              <h2 className="text-3xl font-bold mb-4 text-ucare">Office Hours</h2>
+              <div className="grid grid-cols-2 gap-2 text-md">
                 <div className="font-semibold space-y-2">
                   <p>Monday</p>
                   <p>Tuesday</p>
@@ -49,16 +49,16 @@ export default function OfficePage() {
   
             {/* Financial Options */}
             <div>
-              <h2 className="text-2xl font-bold mb-4 text-blue-700">Financial Options</h2>
-              <p className="text-sm mb-4">
+              <h2 className="text-3xl font-bold mb-4 text-ucare">Financial Options</h2>
+              <p className="text-md mb-4">
                 We are committed to providing quality and affordable dental health care. You have multiple
                 options for payment available. For your convenience we accept cash, Visa, checks, major
                 insurance, participating insurance, MasterCard, CareCredit, in-house plans, and Wells Fargo.
               </p>
-              <p className="text-sm">
+              <p className="text-md">
                 We understand that unexpected dental bills can sometimes strain finances. If this happens,
                 talk with us immediately by calling{" "}
-                <a href="tel:8586580691" className="font-semibold text-blue-600">
+                <a href="tel:8586580691" className="font-semibold text-gray-500">
                   (858) 658-0691
                 </a>
                 . If you help us keep the lines of communication open, we can usually work out acceptable
@@ -68,7 +68,7 @@ export default function OfficePage() {
           </motion.div>
   
           <motion.div
-            className="max-w-4xl mx-auto mt-12"
+            className="max-w-5xl mx-auto mt-12"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -82,15 +82,12 @@ export default function OfficePage() {
             >
               <div>
                 <Image src="/images/office1.jpg" alt="Lobby" width={800} height={500} className="w-full h-auto" />
-                <p className="legend">Lobby</p>
               </div>
               <div>
                 <Image src="/images/office2.jpg" alt="Front Desk" width={800} height={500} className="w-full h-auto" />
-                <p className="legend">Front Desk</p>
               </div>
               <div>
                 <Image src="/images/office3.jpg" alt="Operatory" width={800} height={500} className="w-full h-auto" />
-                <p className="legend">Operatory</p>
               </div>
             </Carousel>
           </motion.div>

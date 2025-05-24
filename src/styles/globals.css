@@ -3,6 +3,15 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --ucare-text: #2a4861;
+  --ucare-header: #1a3a54;
+  --ucare-button: #d0d0c5;
+  --ucare-button-text: #606060;
+  --ucare-border: #faf7f5;
+  --ucare-button-2: #b3e9d8;
+  --ucare-accent: #859ded;
+  --ucare-button-3: #f4f0ee;
+  --ucare-button-3-hover: #e3e0dd;
 }
 
 @theme inline {
@@ -19,8 +28,78 @@
   }
 }
 
+@font-face {
+  font-family: 'Alta';
+  src: url('/fonts/Alta_regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('/fonts/Quicksand_medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  background: var(--background);
+  font-family: 'Quicksand', 'Arial',  sans-serif;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Alta', 'Helvetica', sans-serif;
+}
+
+.text-ucare {
+  color: var(--ucare-text);
+}
+.text-ucare:hover {
+  color: #1c3550;
+}
+
+.ucare-header {
+  color: var(--ucare-header);
+}
+.ucare-header:hover {
+  color: #102b3e;
+}
+
+.ucare-accent {
+  color: var(--ucare-accent);
+}
+.ucare-accent:hover {
+  color: #6c86d9;
+}
+
+.ucare-button {
+  color: var(--ucare-button-text);
+  background: var(--ucare-button);
+}
+.ucare-button:hover {
+  color: var(--ucare-button-text);
+  background-color: rgba(250,247,245,1);
+  background-image: linear-gradient(125deg, rgba(250,247,245,1) 0%, rgba(206,220,231,1) 100%);
+  border-color: var(--ucare-border);
+  transition: color 0.4s ease, background-color 0.4s ease, border-color 0.5s ease;
+  box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+}
+
+.ucare-button-2 {
+  background-color: var(--ucare-button-2);
+}
+.ucare-button-2:hover {
+  background-color: #97ddc4;
+}
+
+.ucare-button-3 {
+  background-color: var(--ucare-button-3)
+}
+.ucare-button-3:hover {
+  background-color: var(--ucare-button-3-hover)
+}
+
+.ucare-footer {
+  background: linear-gradient(90deg, rgb(218, 218, 216) 0%, rgb(250, 247, 245) 100%);
 }

@@ -33,13 +33,13 @@ export default function Navbar() {
       <div className="flex items-center justify-between px-4 sm:px-8 lg:px-16 py-4">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <div className="relative h-10 w-[130px]">
+          <div className="relative h-12 w-[170px] overflow-hidden">
             <Image
-              src="/images/logo.png"
+              src="/images/logo_modern.png"
               alt="U-Care Dental Logo"
               fill
-              className="object-contain"
-              sizes="130px"
+              className="object-contain object-top"
+              sizes="170px"
               priority
             />
           </div>
@@ -47,21 +47,23 @@ export default function Navbar() {
 
         {/* Desktop Nav */}
         <div className="hidden md:flex gap-6 text-xl text-gray-700 font-medium relative">
-          <Link href="/" className="hover:text-blue-600">Home</Link>
+          <Link href="/" className="hover:text-gray-400">
+            Home
+          </Link>
 
           <div
             className="relative"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <span className="hover:text-blue-600 cursor-pointer">Services</span>
+            <span className="hover:text-gray-400 cursor-pointer">Services</span>
             {dropdownOpen && (
               <div className="absolute left-0 mt-2 w-48 bg-white border rounded-lg shadow-lg z-50">
                 {serviceList.map((service) => (
                   <Link
                     key={service}
                     href={`/services/${service}`}
-                    className="block px-4 py-2 text-xl text-gray-700 hover:bg-blue-50 capitalize"
+                    className="block px-4 py-2 text-xl text-gray-700 hover:text-gray-400 capitalize"
                   >
                     {service}
                   </Link>
@@ -70,11 +72,18 @@ export default function Navbar() {
             )}
           </div>
 
-          <Link href="/team" className="text-xl hover:text-blue-600">Team</Link>
-          <Link href="/office" className="text-xl hover:text-blue-600">Office</Link>
-          <Link href="/contact" className="text-xl hover:text-blue-600">Contact</Link>
-          <Link href="/faq" className="text-xl hover:text-blue-600">FAQ</Link>
-
+          {/* <Link href="/team" className="text-xl hover:text-gray-400">
+            Team
+          </Link> */}
+          <Link href="/office" className="text-xl hover:text-gray-400">
+            Office
+          </Link>
+          <Link href="/contact" className="text-xl hover:text-gray-400">
+            Contact
+          </Link>
+          <Link href="/faq" className="text-xl hover:text-gray-400">
+            FAQ
+          </Link>
         </div>
 
         {/* Mobile Menu Icon */}
@@ -90,12 +99,42 @@ export default function Navbar() {
       {/* Mobile Nav */}
       {isOpen && (
         <div className="md:hidden px-4 pb-4 space-y-2 bg-white shadow-md">
-          <Link href="/" className="block text-sm text-gray-700 hover:text-blue-600">Home</Link>
-          <Link href="/services" className="block text-sm text-gray-700 hover:text-blue-600">Services</Link>
-          <Link href="/team" className="block text-sm text-gray-700 hover:text-blue-600">Team</Link>
-          <Link href="/office" className="block text-sm text-gray-700 hover:text-blue-600">Office</Link>
-          <Link href="/contact" className="block text-sm text-gray-700 hover:text-blue-600">Contact</Link>
-          <Link href="/faq" className="block text-sm text-gray-700 hover:text-blue-600">FAQ</Link>
+          <Link href="/" className="block text-sm text-gray-700 hover:text-gray-400">
+            Home
+          </Link>
+          <div>
+            <button
+              className="w-full text-left text-sm text-gray-700 hover:text-gray-400"
+              onClick={() => setDropdownOpen(!dropdownOpen)}
+            >
+              Services
+            </button>
+            {dropdownOpen && (
+              <div className="mt-1 ml-4 space-y-1">
+                {serviceList.map((service) => (
+                  <Link
+                    key={service}
+                    href={`/services/${service}`}
+                    className="block text-sm text-gray-700 hover:text-gray-400 capitalize"
+                  >
+                    {service}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+          {/* <Link href="/team" className="block text-sm text-gray-700 hover:text-gray-400">
+            Team
+          </Link> */}
+          <Link href="/office" className="block text-sm text-gray-700 hover:text-gray-400">
+            Office
+          </Link>
+          <Link href="/contact" className="block text-sm text-gray-700 hover:text-gray-400">
+            Contact
+          </Link>
+          <Link href="/faq" className="block text-sm text-gray-700 hover:text-gray-400">
+            FAQ
+          </Link>
         </div>
       )}
     </nav>

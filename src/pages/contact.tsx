@@ -48,17 +48,17 @@ export default function ContactPage() {
           className="object-cover"
         />
         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-          <h1 className="text-4xl md:text-5xl text-white font-semibold">Contact Us</h1>
+          <h1 className="text-5xl md:text-7xl text-white font-semibold">Contact Us</h1>
         </div>
       </div>
 
       {/* Gradient Background Section */}
-      <section className="bg-gradient-to-br from-white to-blue-50 py-20 px-6 text-gray-800">
+      <section className="py-20 px-6 text-gray-800">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
           {/* Left - Form */}
           <div className="bg-white/90 backdrop-blur-md p-8 rounded-xl shadow-lg">
-            <h2 className="text-xl font-semibold mb-6">Let&apos;s Connect</h2>
-            <p className="text-sm text-gray-600 mb-6">
+            <h2 className="text-2xl font-semibold mb-6">Let&apos;s Connect</h2>
+            <p className="text-lg text-slate-700 mb-6">
                 Need help or have a question? Send us a message and we&apos;ll get back to you soon.
             </p>
 
@@ -71,7 +71,7 @@ export default function ContactPage() {
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Name"
                   required
-                  className="w-full bg-white text-gray-800 p-3 pl-10 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full bg-white text-gray-800 p-3 pl-10 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-300"
                 />
               </div>
 
@@ -83,7 +83,7 @@ export default function ContactPage() {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Email"
                   required
-                  className="w-full bg-white text-gray-800 p-3 pl-10 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full bg-white text-gray-800 p-3 pl-10 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-300"
                 />
               </div>
 
@@ -95,7 +95,7 @@ export default function ContactPage() {
                   onChange={(e) => setPhone(e.target.value)}
                   placeholder="Phone"
                   required
-                  className="w-full bg-white text-gray-800 p-3 pl-10 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full bg-white text-gray-800 p-3 pl-10 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-300"
                 />
               </div>
 
@@ -106,13 +106,13 @@ export default function ContactPage() {
                   onChange={(e) => setMessage(e.target.value)}
                   placeholder="Message"
                   rows={4}
-                  className="w-full bg-white text-gray-800 p-3 pl-10 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full bg-white text-gray-800 p-3 pl-10 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-300"
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 py-3 rounded-lg font-semibold text-white"
+                className="w-full ucare-button py-3 rounded-lg font-semibold text-white"
               >
                 Send Message
               </button>
@@ -122,9 +122,9 @@ export default function ContactPage() {
           {/* Right - Info */}
           <div className="bg-white/90 backdrop-blur-md p-8 rounded-xl shadow-lg space-y-6 text-gray-800">
             <div>
-              <h3 className="text-lg font-semibold mb-2">Contact Information</h3>
+              <h3 className="text-2xl font-semibold mb-2">Contact Information</h3>
 
-              <a href="tel:8586580691" className="flex items-center gap-2 text-blue-600 hover:underline">
+              <a href="tel:8586580691" className="flex items-center gap-2 text-ucare hover:underline">
                 <PhoneIcon className="h-4 w-4" />
                 (858) 658-0691
               </a>
@@ -133,7 +133,7 @@ export default function ContactPage() {
                 href="https://maps.google.com/?q=6255+Lusk+Blvd+Suite+250,+San+Diego,+CA+92121"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-blue-600 hover:underline mt-2"
+                className="flex items-center gap-2 text-ucare hover:underline mt-2"
               >
                 <MapPinIcon className="h-4 w-4" />
                 6255 Lusk Blvd, Suite 250, San Diego, CA 92121
@@ -141,7 +141,7 @@ export default function ContactPage() {
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-2">Working Hours</h3>
-              <div className="grid grid-cols-2 text-sm">
+              <div className="grid grid-cols-2 text-lg">
                 <span>Monday:</span> <span>7:30 AM - 4:30 PM</span>
                 <span>Tuesday:</span> <span>7:30 AM - 11:30 AM</span>
                 <span>Wednesday:</span> <span>7:30 AM - 4:30 PM</span>

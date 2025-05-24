@@ -11,14 +11,14 @@ export default function FAQItem({ question, answer }: Props) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="border-b border-blue-700 pb-4">
+    <div className="border-b border-gray-700 pb-4">
       <button
         onClick={() => setOpen(!open)}
         className="flex justify-between items-center w-full text-left"
       >
-        <span className="text-lg font-semibold text-blue-700">{question}</span>
+        <span className="text-lg font-semibold text-ucare">{question}</span>
         <ChevronDownIcon
-          className={`w-5 h-5 text-indigo-600 transition-transform duration-300 ${
+          className={`w-10 h-10 text-ucare transition-transform duration-300 ${
             open ? "rotate-180" : ""
           }`}
         />

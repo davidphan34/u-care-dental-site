@@ -19,11 +19,11 @@ const titles: Record<string, string> = {
 
 const FullService: FC<FullServiceProps> = ({ service }) => {
   return (
-    <div className="max-w-4xl mx-auto text-left space-y-10">
-      <h2 className="text-2xl font-semibold text-blue-700">
+    <div className="max-w-6xl mx-auto text-left space-y-10">
+      <h2 className="text-4xl font-semibold text-ucare">
         {titles[service] || service.replace("_", " ")}
       </h2>
-      <div className="text-gray-800 text-lg leading-relaxed space-y-6">
+      <div className="text-ucare text-lg leading-relaxed space-y-6">
         {descriptions[service]}
       </div>
     </div>

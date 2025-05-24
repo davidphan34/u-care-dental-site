@@ -24,7 +24,7 @@ export default function CrownsPage() {
       </div>
 
       {/* Content Section */}
-      <section className="bg-gradient-to-br from-white to-blue-50 px-6 py-24">
+      <section className="px-6 py-24">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -36,7 +36,7 @@ export default function CrownsPage() {
           <div className="text-center pt-6">
             <Link
               href="/contact"
-              className="text-blue-600 font-medium hover:underline"
+              className="text-ucare font-medium hover:underline"
             >
               Ready to book? Contact us today →
             </Link>
