@@ -2,12 +2,14 @@
 import Layout from "@/components/Layout";
 import Image from "next/image";
 import { useState } from "react";
+import { toast } from 'react-hot-toast';
 import {
   UserIcon,
   EnvelopeIcon,
   PhoneIcon,
   ChatBubbleBottomCenterTextIcon,
   MapPinIcon,
+  PrinterIcon
 } from "@heroicons/react/24/outline";
 
 export default function ContactPage() {
@@ -27,13 +29,13 @@ export default function ContactPage() {
     });
 
     if (res.ok) {
-      alert("Message sent!");
+      toast.success("Your message has been sent!");
       setName("");
       setEmail("");
       setPhone("");
       setMessage("");
     } else {
-      alert("Something went wrong. Try again later.");
+      toast.error("Something went wrong. Please try again later.");
     }
   };
 
@@ -123,12 +125,6 @@ export default function ContactPage() {
           <div className="bg-white/90 backdrop-blur-md p-8 rounded-xl shadow-lg space-y-6 text-gray-800">
             <div>
               <h3 className="text-2xl font-semibold mb-2">Contact Information</h3>
-
-              <a href="tel:8586580691" className="flex items-center gap-2 text-ucare hover:underline">
-                <PhoneIcon className="h-4 w-4" />
-                (858) 658-0691
-              </a>
-
               <a
                 href="https://maps.google.com/?q=6255+Lusk+Blvd+Suite+250,+San+Diego,+CA+92121"
                 target="_blank"
@@ -137,6 +133,15 @@ export default function ContactPage() {
               >
                 <MapPinIcon className="h-4 w-4" />
                 6255 Lusk Blvd, Suite 250, San Diego, CA 92121
+              </a>
+
+              <a href="tel:8586580691" className="flex items-center gap-2 text-ucare hover:underline">
+                <PhoneIcon className="h-4 w-4" />
+                (858) 658-0691
+              </a>
+              <a className="flex items-center gap-2 text-ucare">
+                <PrinterIcon className="h-4 w-4" />
+                (858) 658-0692
               </a>
             </div>
             <div>

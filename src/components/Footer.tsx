@@ -3,6 +3,7 @@ import Link from "next/link";
 import {
   PhoneIcon,
   MapPinIcon,
+  PrinterIcon
 } from "@heroicons/react/24/outline";
 
 export default function Footer() {
@@ -11,7 +12,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
         {/* Logo */}
         <div className="flex flex-col items-start">
-          <Image src="/images/logo.png" alt="U-Care Dental Logo" width={300} height={450} />
+          <Image src="/images/logo_bottom.png" alt="U-Care Dental Logo" width={200} height={450} />
         </div>
 
         {/* Explore */}
@@ -57,6 +58,12 @@ export default function Footer() {
               <a href="tel:8586580691" className="flex items-center gap-2 text-ucare hover:underline">
                 <PhoneIcon className="h-4 w-4" />
                 (858) 658-0691
+              </a>
+            </li>
+            <li className="flex items-center gap-2">
+              <a className="flex items-center gap-2 text-ucare">
+                <PrinterIcon className="h-4 w-4" />
+                (858) 658-0692
               </a>
             </li>
           </ul>

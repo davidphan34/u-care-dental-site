@@ -15,7 +15,7 @@ export default async function handler(
   try {
     await resend.emails.send({
       from: 'UCare Dental Website<noreply@youcaredental.com>',
-      to: 'davidphan34@gmail.com',
+      to: 'ucarefax@hotmail.com',
       subject: `UCare Dental Website: New contact from ${name}`,
       replyTo: email,
       html: `

@@ -7,7 +7,7 @@ interface FullServiceProps {
 }
 
 const titles: Record<string, string> = {
-  bonding: "Quick fixes for chips and gaps",
+  bonding: "Fixes for chips and gaps",
   cleaning: "Professional cleanings for a healthier smile",
   crowns: "Restoring strength and beauty to damaged teeth",
   fillings: "Durable fillings that blend seamlessly",

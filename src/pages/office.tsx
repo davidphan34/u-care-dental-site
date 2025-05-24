@@ -26,27 +26,6 @@ export default function OfficePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            {/* Office Hours */}
-            <div>
-              <h2 className="text-3xl font-bold mb-4 text-ucare">Office Hours</h2>
-              <div className="grid grid-cols-2 gap-2 text-md">
-                <div className="font-semibold space-y-2">
-                  <p>Monday</p>
-                  <p>Tuesday</p>
-                  <p>Wednesday</p>
-                  <p>Thursday</p>
-                  <p>Friday</p>
-                </div>
-                <div className="space-y-2">
-                  <p>7:30 AM - 4:30 PM</p>
-                  <p>7:30 AM - 11:30 AM</p>
-                  <p>7:30 AM - 4:30 PM</p>
-                  <p>7:30 AM - 11:30 AM</p>
-                  <p>7:30 AM - 4:30 PM</p>
-                </div>
-              </div>
-            </div>
-  
             {/* Financial Options */}
             <div>
               <h2 className="text-3xl font-bold mb-4 text-ucare">Financial Options</h2>
@@ -64,6 +43,29 @@ export default function OfficePage() {
                 . If you help us keep the lines of communication open, we can usually work out acceptable
                 arrangements.
               </p>
+            </div>
+
+            {/* Office Hours */}
+            <div>
+              <h2 className="text-3xl font-bold mb-4 text-ucare">Office Hours</h2>
+              <div className="grid grid-cols-2 gap-2 text-md">
+                <div className="font-semibold space-y-2 text-ucare">
+                  <p>Monday</p>
+                  <p>Tuesday</p>
+                  <p>Wednesday</p>
+                  <p>Thursday</p>
+                  <p>Friday</p>
+                  <p>Saturday - Sunday</p>
+                </div>
+                <div className="space-y-2">
+                  <p>7:30 AM - 4:30 PM</p>
+                  <p>7:30 AM - 11:30 AM</p>
+                  <p>7:30 AM - 4:30 PM</p>
+                  <p>7:30 AM - 11:30 AM</p>
+                  <p>7:30 AM - 4:30 PM</p>
+                  <p>Closed</p>
+                </div>
+              </div>
             </div>
           </motion.div>
   

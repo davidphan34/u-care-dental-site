@@ -7,11 +7,12 @@ Welcome to the official website for **U-Care Dental**, a static website built to
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **Language**: TypeScript
-- **Deployment**: Vercel (coming soon)
+- **Deployment**: Vercel
 
 ## 📄 Pages
 
 - `/` — Home: Welcome & branding
-- `/about` — About the dental office
-- `/services` — List of dental services
-- `/contact` — Contact info (form coming soon)
+- `/office` — About the dental office
+- `/services/{insert service}` — Dental services
+- `/contact` — Contact info and email service
+- `/faq` — FAQ page

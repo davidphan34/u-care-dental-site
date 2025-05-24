@@ -36,7 +36,7 @@ export default function Navbar() {
           <div className="relative h-12 w-[170px] overflow-hidden">
             <Image
               src="/images/logo_modern.png"
-              alt="U-Care Dental Logo"
+              alt="UCare Dental Logo"
               fill
               className="object-contain object-top"
               sizes="170px"
